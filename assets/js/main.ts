@@ -1,5 +1,5 @@
 let video: any = document.querySelector('.video');
-let progress = document.querySelector('.progress-bar');
+let progress: any = document.querySelector('.progress-bar');
 let playPauseBtn: any = document.getElementById('play-pause');
 
 playPauseBtn.onclick = function () {
@@ -16,3 +16,8 @@ function togglePlayPause() {
     }
 }
 
+video.addEventListener('timeupdate', () => {
+    let progressPosition: number = video.currentTime / video.duration;
+    progress.style.width = progressPosition * 100 + '%';
+    video.ended = 100 && (playPauseBtn.className = 'play');
+});

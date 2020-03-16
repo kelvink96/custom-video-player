@@ -14,3 +14,8 @@ function togglePlayPause() {
         this.video.pause();
     }
 }
+video.addEventListener('timeupdate', function () {
+    var progressPosition = video.currentTime / video.duration;
+    progress.style.width = progressPosition * 100 + '%';
+    video.ended = 100 && (playPauseBtn.className = 'play');
+});
