@@ -1,9 +1,19 @@
-.container {
+body {
+  margin: 0;
+}
+body .container {
   display: flex;
   background-color: lightgrey;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+body .container .c-video {
+  width: 100%;
+  max-width: 800px;
+}
+body .container .c-video .video {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
