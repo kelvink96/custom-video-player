@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link rel="stylesheet" href="assets/css/all.min.css"/>
-    <link rel="stylesheet" href="assets/css/styles.css"/>
-    <title>Video Player</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<link rel="stylesheet" href="assets/css/all.min.css"/>
+	<link rel="stylesheet" href="assets/css/styles.css"/>
+	<title>Video Player</title>
 </head>
 <body>
 <div class="container">
-    <div class="c-video">
-        <video
-                class="video"
-                src="assets/videos/Chris%20Kaiga%20-%20KONKODO%20ft%20Kiloriti%20(Official%20Audio)%20-%20YouTube_2.mkv"
-                controls
-        ></video>
-    </div>
+	<div class="c-video">
+		<video
+				class="video"
+				src="assets/videos/Chris%20Kaiga%20-%20KONKODO%20ft%20Kiloriti%20(Official%20Audio)%20-%20YouTube_2.mkv"
+		></video>
+		<div class="controls">
+			<div class="progress-wrapper">
+				<div class="progress-bar"></div>
+			</div>
+			<div class="buttons">
+				<button id="play-pause"></button>
+			</div>
+		</div>
+	</div>
 </div>
 </body>
-<script src=""></script>
+<script src="assets/js/main.js"></script>
 </html>
